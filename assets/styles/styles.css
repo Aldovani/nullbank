@@ -105,8 +105,101 @@ button {
   transform: translateX(-177px);
 }
 
+.benefits {
+  padding: 128px 0;
+  display: flex;
+  position: relative;
+}
+.benefits .content {
+  position: relative;
+  z-index: 2;
+}
+.benefits h2 {
+  max-width: 478px;
+}
+.benefits span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #748FFC;
+}
+.benefits .container-cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas: "p  ." "s  t" "c  v";
+  gap: 32px;
+}
+.benefits .container-cards .card {
+  display: flex;
+  flex-direction: column;
+  background: #F8F9FA;
+  box-shadow: 0px 9px 30px rgba(92, 124, 250, 0.2);
+  padding: 16px 32px 24px 16px;
+  max-width: 280px;
+  align-items: start;
+}
+.benefits .container-cards .card strong {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #4C6EF5;
+  margin: 16px 0 32px;
+}
+.benefits .display-text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 400px;
+  line-height: 100%;
+  color: #748FFC;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  z-index: 0;
+  transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(20%, 30%);
+}
+.benefits .display-text:hover::after {
+  transform: translate(0);
+  transition: all 0.2s ease;
+}
+.benefits .display-text::after {
+  content: "Null";
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 400px;
+  line-height: 100%;
+  color: #BAC8FF;
+  transform: translate(64px, 64px);
+  z-index: -1;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 0;
+}
+.benefits [data-grid=p] {
+  grid-area: p;
+}
+.benefits [data-grid=s] {
+  grid-area: s;
+}
+.benefits [data-grid=t] {
+  grid-area: t;
+}
+.benefits [data-grid=c] {
+  grid-area: c;
+}
+.benefits [data-grid=v] {
+  grid-area: v;
+}
+
 body {
   background: #F8F9FA;
+  overflow-x: hidden;
 }
 
 .button {
@@ -166,9 +259,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  /* identical to box height */
   text-transform: capitalize;
-  /* Indigo/Indigo 4 */
   color: #748FFC;
 }
 .cards h2 {

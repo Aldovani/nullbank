@@ -1,7 +1,8 @@
- @import "reset", "typography", "header", 'main';
+ @import "reset", "typography", "header", 'main', 'benefits';
 
  body {
    background: #F8F9FA;
+   overflow-x: hidden;
  }
 
  .button {
@@ -72,11 +73,7 @@
      font-weight: 400;
      font-size: 18px;
      line-height: 27px;
-     /* identical to box height */
-
      text-transform: capitalize;
-
-     /* Indigo/Indigo 4 */
 
      color: #748FFC;
    }
