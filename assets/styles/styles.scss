@@ -1,4 +1,4 @@
- @import "reset", "typography", "header", 'main', 'benefits', 'app', 'testimonials';
+ @import "reset", "typography", "header", 'main', 'benefits', 'app', 'testimonials', 'download';
 
  body {
    background: #F8F9FA;
@@ -45,7 +45,7 @@
  .cards {
    margin-top: 182px;
    background: #EDF2FF;
-   padding: 136px;
+   padding: 136px 0;
 
    .container {
      align-items: center;
