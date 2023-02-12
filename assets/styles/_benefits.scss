@@ -84,7 +84,7 @@
       transform: translate(64px, 64px);
       z-index: -1;
       transition: all .3s ease;
-
+      pointer-events: none;
       position: absolute;
       right: 0;
 
