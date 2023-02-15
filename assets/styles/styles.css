@@ -339,15 +339,29 @@ button {
 }
 
 .download {
+  margin-top: 244px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .download .content > p {
   max-width: 591px;
+  margin: 16px 0 24px;
 }
-.download .content > img {
+.download .icon-app {
+  background: #5C7CFA;
   box-shadow: 0px 51px 80px rgba(169, 80, 196, 0.08), 0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271), 0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04), 0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F8F9FA;
+  height: 377px;
+  width: 377px;
 }
 
 .container-icons-stores {
@@ -378,6 +392,92 @@ button {
   font-size: 13px;
   line-height: 17px;
   color: #5C7CFA;
+}
+
+.faq {
+  padding: 180px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.faq .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list-questions {
+  list-style: none;
+  max-width: 1040px;
+  margin: 64px auto;
+}
+.list-questions li + li {
+  margin-top: 32px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-bottom: 1px solid #CED4DA;
+  gap: 32px;
+}
+.question-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #212529;
+}
+.question p {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+.question span {
+  display: block;
+  width: 28px;
+  background: #4C6EF5;
+  height: 3px;
+  position: relative;
+  border-radius: 5px;
+}
+.question span::after {
+  border-radius: 5px;
+  content: "";
+  position: absolute;
+  height: 28px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #4C6EF5;
+  width: 3px;
+}
+.question .container-button {
+  max-width: 28px;
+  max-height: 28px;
+}
+.question.open {
+  border-bottom: 1px solid #748FFC;
+}
+.question.open p {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.question.open span {
+  background: transparent;
+}
+.question.open span::after {
+  transform: translate(-50%, -50%) rotateZ(90deg);
 }
 
 body {
