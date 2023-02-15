@@ -1,4 +1,5 @@
 .download {
+  margin-top: 244px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,11 +8,26 @@
 
     >p {
       max-width: 591px;
+      margin: 16px 0 24px;
     }
 
-    >img {
-      box-shadow: 0px 51px 80px rgba(169, 80, 196, 0.08), 0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271), 0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04), 0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729)
-    }
+
+  }
+
+  .icon-app {
+    background: #5C7CFA;
+    box-shadow: 0px 51px 80px rgba(169, 80, 196, 0.08), 0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271), 0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04), 0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729);
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F8F9FA;
+    height: 377px;
+    width: 377px;
   }
 
 }
