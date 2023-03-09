@@ -19,9 +19,9 @@
     margin-top: 40px;
     display: grid;
     grid-template-areas:
-      "p  ."
-      "s  t"
-      "c  v"
+      "p  . ."
+      "s  t ."
+      "c  . v"
     ;
     gap: 32px;
 
@@ -60,7 +60,7 @@
     position: absolute;
     right: 0;
     bottom: 50%;
-    z-index: 0;
+    z-index: 2;
 
     transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(20%, 30%);
 

@@ -15,11 +15,22 @@ h4 {
   font-family: "DM Sans", sans-serif;
 }
 
-button {
+button,
+a {
   cursor: pointer;
 }
 
-.title-1 {
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+.text-display {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -28,17 +39,16 @@ button {
   color: #212529;
 }
 
-.title-2 {
+.text-title {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 62px;
-  /* Gray/Gray 9 */
   color: #212529;
 }
 
-.body-text {
+.text-body {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -47,7 +57,7 @@ button {
   color: #495057;
 }
 
-.hat-text {
+.text-hat {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -130,7 +140,7 @@ button {
 .benefits .container-cards {
   margin-top: 40px;
   display: grid;
-  grid-template-areas: "p  ." "s  t" "c  v";
+  grid-template-areas: "p  . ." "s  t ." "c  . v";
   gap: 32px;
 }
 .benefits .container-cards .card {
@@ -161,7 +171,7 @@ button {
   position: absolute;
   right: 0;
   bottom: 50%;
-  z-index: 0;
+  z-index: 2;
   transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(20%, 30%);
 }
 .benefits .display-text:hover::after {
@@ -395,7 +405,7 @@ button {
 }
 
 .faq {
-  padding: 180px 0;
+  padding: 180px 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -480,6 +490,16 @@ button {
   transform: translate(-50%, -50%) rotateZ(90deg);
 }
 
+.footer {
+  margin-top: 200px;
+  background: #EDF2FF;
+  padding: 80px 0;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 body {
   background: #F8F9FA;
   overflow-x: hidden;
@@ -551,4 +571,29 @@ body {
 .cards p {
   width: 520px;
   margin: 8px 0 32px;
+}
+
+.store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F8F9FA;
+  box-shadow: 0px 9px 30px rgba(92, 124, 250, 0.2);
+  width: 167px;
+  height: 53px;
+}
+.store p {
+  margin-left: 10px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #232224;
+}
+.store p strong {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  color: #5C7CFA;
 }/*# sourceMappingURL=styles.css.map */
