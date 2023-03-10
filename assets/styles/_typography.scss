@@ -1,24 +1,18 @@
 .text-display {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  color: #212529;
+  font-size: 4.8rem;
+  
+  color: var(--gray-color-900);
+  
 }
 
 .text-title {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 62px;
-
-  color: #212529;
+  font-size: 4.0rem;
+  line-height: 5.8rem;
+  color: var(--gray-color-900);
+  
 }
 
 .text-body {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -28,13 +22,10 @@
 
 .text-hat {
   font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-
-  text-transform: capitalize;
-
-  color: #748FFC;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color:var(--primary-color-main);
 
 }
