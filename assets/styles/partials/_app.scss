@@ -1,0 +1,83 @@
+.app {
+  margin-top: 200px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .phone {
+      position: relative;
+      transform: translateX(104px);
+
+      svg {
+        width: 295px;
+        height: 603px;
+      }
+
+    }
+
+    .content {
+      max-width: 520px;
+
+
+
+      ul {
+        margin-top: 3.2rem;
+
+        p {
+          font-family: 'Poppins';
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 150%;
+
+          color: var(--gray-color-700);
+
+        }
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        gap: 20px;
+        align-items: center;
+
+        &+li {
+          margin-top: 2rem;
+        }
+      }
+
+      .icon {
+        height: 8rem;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--primary-color-light);
+        border-radius: 16px;
+      }
+
+      svg {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+  }
+
+  @include responsive(s) {
+
+    .container {
+      flex-direction: column-reverse;
+
+      gap: 64px;
+
+      .phone {
+        transform: translateX(0);
+      }
+    }
+
+  }
+}

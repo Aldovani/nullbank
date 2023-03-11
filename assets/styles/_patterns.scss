@@ -1,0 +1,43 @@
+.button {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 100%;
+
+  padding: 12px 32px;
+  text-transform: uppercase;
+  border: 0;
+  color: var(--gray-color-000);
+
+  background: var(--gradient);
+  border-radius: 8px;
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
+
+.logo {
+
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 100%;
+
+  background: linear-gradient(114deg, #3777F4 -4.38%, #1B2A4C 105.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+
+}
+
+
+.container {
+  padding: 16px;
+  max-width: 1247px;
+  width: 100%;
+  margin: 0 auto;
+}

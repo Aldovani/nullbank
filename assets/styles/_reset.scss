@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,8 +27,7 @@ ul {
 }
 
 img,
-svg
- {
+svg {
   max-width: 100%;
   display: block;
 }
