@@ -1,0 +1,78 @@
+.main {
+  padding-top: 100px;
+  position: relative;
+
+  height: 847px;
+
+  &::after {
+    content: "";
+    width: 50vw;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-100px);
+    background: linear-gradient(157.9deg, #4C6EF5 -0.59%, #1E325F 113.51%);
+  }
+
+  .container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+
+
+
+
+  .content {
+    width: 100%;
+    max-width: 492px;
+
+
+    .text-display {
+      span {
+        color: var(--primary-color-main);
+      }
+    }
+
+    p {
+      margin: 0.8rem 0 2.4rem;
+    }
+  }
+
+
+  .cards {
+    svg {
+      width: 513.33px;
+      height: auto;
+    }
+
+  }
+
+
+
+  // @include responsive(s) {
+  //   &::after {
+  //     display: none;
+  //   }
+
+  //   .cards {
+  //     display: none;
+  //   }
+  // }
+
+  @include responsive(s) {
+    &::after {
+      display: none;
+    }
+
+    .cards {
+      display: none;
+    }
+  }
+}

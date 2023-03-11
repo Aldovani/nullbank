@@ -107,6 +107,7 @@
   bottom: 0;
   right: 0;
   transform: translateY(100%);
+  z-index: 3;
 
   display: flex;
   flex-direction: column;
@@ -181,6 +182,6 @@
   }
 
   @include responsive(s) {
-    display: flex ;
+    display: flex;
   }
 }

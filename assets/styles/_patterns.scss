@@ -41,3 +41,21 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.icon {
+  height: 8rem;
+  width: 8rem;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--primary-color-light);
+  border-radius: 16px;
+
+  svg {
+    width: 48px;
+    height: 48px;
+  }
+}
