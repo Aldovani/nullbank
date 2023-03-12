@@ -1,17 +1,20 @@
-.benefits {
-  padding: 128px 0;
+.s-benefits {
+  margin-top: 208px ;
   display: flex;
-  position: relative;
+
+  .container {
+    position: relative;
+  }
 
   .content {
     position: relative;
     z-index: 2;
+
+    h2 {
+      max-width: 478px;
+    }
   }
 
-  h2 {
-
-    max-width: 478px;
-  }
 
 
 
@@ -21,75 +24,77 @@
     grid-template-areas:
       "p  . ."
       "s  t ."
-      "c  . v"
+      "c  v v-2"
     ;
+    grid-template-columns: repeat(3, 280px);
     gap: 32px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
 
     .card {
       display: flex;
       flex-direction: column;
-      background: #F8F9FA;
-      box-shadow: 0px 9px 30px rgba(92, 124, 250, 0.2);
-      padding: 16px 32px 24px 16px;
-      max-width: 280px;
-
+      background: var(--primary-color-light);
+      padding: 32px 16px 24px 16px;
+      border-radius: 8px;
       align-items: start;
 
 
 
       strong {
         font-family: 'Poppins';
-        font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 100%;
         color: #4C6EF5;
-        margin: 16px 0 32px;
+        margin: 16px 0 20px;
+      }
+
+      p {
+        color: var(--gray-color-900);
       }
     }
   }
 
 
-  .display-text {
+  .text-display {
     font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 400px;
     line-height: 100%;
-    color: #748FFC;
     position: absolute;
     right: 0;
     bottom: 50%;
-    z-index: 2;
+    z-index: 10;
 
-    transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(20%, 30%);
+    transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(10%, 30%);
 
-    &:hover {
-      // transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(0, 0);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: all .4s ease;
 
-      &::after {
-        transform: translate(0);
-        transition: all .2s ease;
-      }
+
+    &:nth-child(1):hover {
+      transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(20%, 50%);
     }
 
-    &::after {
-      content: "Null";
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 400px;
-      line-height: 100%;
-      color: #BAC8FF;
-      transform: translate(64px, 64px);
-      z-index: -1;
-      transition: all .3s ease;
+    &:nth-child(2) {
       pointer-events: none;
-      position: absolute;
-      right: 0;
-
+      background: linear-gradient(157.9deg, rgba(76, 110, 245, 0.4) -0.59%, rgba(30, 50, 95, 0.4) 113.51%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(20%, 50%);
 
     }
+
 
 
   }
@@ -112,6 +117,10 @@
 
   [data-grid="v"] {
     grid-area: v;
+  }
+
+  [data-grid="v-2"] {
+    grid-area: v-2;
   }
 
 }

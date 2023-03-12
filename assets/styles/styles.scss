@@ -9,79 +9,8 @@
  @import "partials/main";
  @import "partials/cards";
  @import "partials/app";
-
- //  .cards {
- //    margin-top: 182px;
- //    background: #EDF2FF;
- //    padding: 136px 0;
-
- //    .container {
- //      align-items: center;
- //      justify-content: space-between;
- //      display: flex;
- //    }
-
- //    img {
- //      height: auto;
- //      width: 477.44px;
- //    }
-
- //    a {
- //      font-family: 'Poppins';
- //      font-style: normal;
- //      font-weight: 500;
- //      font-size: 18px;
- //      line-height: 27px;
- //      color: #4C6EF5;
- //    }
-
- //    span {
- //      font-family: 'Poppins';
- //      font-style: normal;
- //      font-weight: 400;
- //      font-size: 18px;
- //      line-height: 27px;
- //      text-transform: capitalize;
-
- //      color: #748FFC;
- //    }
-
- //    h2 {
- //      max-width: 567px;
- //    }
-
- //    p {
- //      width: 520px;
- //      margin: 8px 0 32px;
- //    }
- //  }
-
-
- .store {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: #F8F9FA;
-   box-shadow: 0px 9px 30px rgba(92, 124, 250, 0.2);
-   width: 167px;
-   height: 53px;
-
-   p {
-     margin-left: 10px;
-     font-family: 'DM Sans';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 10px;
-     line-height: 13px;
-     color: #232224;
-
-     strong {
-       font-weight: 700;
-       font-size: 13px;
-       line-height: 17px;
-
-
-       color: #5C7CFA;
-     }
-   }
- }
+ @import "partials/benefits";
+ @import "partials/testimonials";
+ @import "partials/download";
+ @import "partials/faq";
+ @import "partials/footer";

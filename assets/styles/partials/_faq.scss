@@ -1,34 +1,19 @@
-.faq {
-  padding: 180px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.s-faq {
+  margin-top: 180px;
 
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+  .container {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 103px;
   }
-}
 
-.list-questions {
-  list-style: none;
-  max-width: 1040px;
-  margin: 64px auto;
-
-  li+li {
-    margin-top: 32px;
-  }
 }
 
 .question {
   display: flex;
   flex-direction: column;
   padding: 32px;
-  border-bottom: 1px solid #CED4DA;
+  border-bottom: 1px solid var(--gray-color-400);
   gap: 32px;
 
   &-header {
@@ -39,12 +24,10 @@
 
   &-title {
     font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 100%;
-    color: #212529;
-
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--gray-color-900);
   }
 
   p {
@@ -53,15 +36,23 @@
     display: none;
   }
 
+  .container-button {
+    max-width: 28px;
+    max-height: 28px;
+
+  }
+
   span {
 
     display: block;
     width: 28px;
-    background: #4C6EF5;
+    background: var(--primary-color-light);
     height: 3px;
 
     position: relative;
     border-radius: 5px;
+
+    transition: all .3s;
 
     &::after {
       border-radius: 5px;
@@ -71,22 +62,18 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      background: #4C6EF5;
-
+      background: var(--primary-color-light);
+      transition: all .3s;
       width: 3px;
     }
 
   }
 
-  .container-button {
-    max-width: 28px;
-    max-height: 28px;
 
-  }
 
   &.open {
 
-    border-bottom: 1px solid #748FFC;
+    border-bottom: 1px solid var(--primary-color-main);
 
     p {
       visibility: visible;
@@ -98,10 +85,24 @@
       background: transparent;
 
       &::after {
+        background: var(--primary-color-main);
         transform: translate(-50%, -50%) rotateZ(90deg);
       }
     }
 
+  }
+
+  &:hover {
+    border-color: var(--primary-color-main);
+
+    span {
+      background: var(--primary-color-main);
+
+      &::after {
+        background: var(--primary-color-main);
+
+      }
+    }
   }
 
 }
