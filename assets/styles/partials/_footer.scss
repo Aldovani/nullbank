@@ -73,4 +73,66 @@
 
 
   }
+
+  @include responsive(s) {
+    margin-top: 100px;
+
+    .container {
+
+      display: grid;
+      grid-template-areas:
+        ". l ."
+        "n p r"
+        ".b .";
+      justify-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      a {
+        font-size: 1.6rem;
+      }
+
+      .container-icons-stores {
+        align-items: center;
+      }
+
+      .col:nth-child(1) {
+        grid-area: l;
+      }
+
+      .col:nth-child(2) {
+        grid-area: n;
+      }
+
+      .col:nth-child(3) {
+        grid-area: p;
+      }
+
+      .col:nth-child(4) {
+        grid-area: r;
+      }
+
+      .col:nth-child(5) {
+        grid-area: b;
+      }
+    }
+
+  }
+
+  @include responsive(xs) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "l l"
+        "n p"
+        "r ."
+        "b b";
+      gap: 32px;
+    }
+  }
 }

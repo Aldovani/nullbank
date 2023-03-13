@@ -50,14 +50,25 @@
   }
 
   .cards {
-    width: 503px;
-    height: 440.65px;
+    max-width: 503px;
+    max-height: 440.65px;
+    width: 100%;
   }
 
   @include responsive(s) {
+
     .container {
       flex-direction: column;
       gap: 64px;
+
+      li {
+        grid-template-columns: 64px 1fr;
+        gap: 8px;
+      }
+    }
+
+    .cards {
+      width: 80%;
     }
   }
 }

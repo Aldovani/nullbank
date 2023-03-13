@@ -22,10 +22,38 @@
     transform: translateX(-104px);
 
     svg {
-      width: 295px;
-      height: 603px;
+      width: 100%;
+      max-width: 295px;
+      max-height: 603px;
     }
   }
 
+  @include responsive(s) {
+    margin-top: 10rem;
+
+    .container {
+      flex-direction: column;
+      gap: 64px;
+
+      .container-icons-stores {
+        flex-direction: column;
+
+        .store {
+          width: 100%;
+        }
+      }
+    }
+
+    .phone {
+      transform: translateX(0);
+
+      svg {
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+      }
+    }
+
+  }
 
 }

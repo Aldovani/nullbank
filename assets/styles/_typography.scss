@@ -1,17 +1,23 @@
 .text-display {
   font-weight: 700;
   font-size: 4.8rem;
-  line-height: 5.8rem;
+  line-height: 120%;
   color: var(--gray-color-900);
+
+
+  @include responsive(s) {
+    font-size: 4rem;
+  }
 }
 
 .text-title {
-  font-style: normal;
-  font-weight: 700;
   font-size: 4rem;
-  line-height: 62px;
+  line-height: 120%;
+  color: var(--gray-color-900);
 
-  color: #212529;
+  @include responsive(s) {
+    font-size: 3.2rem;
+  }
 }
 
 .text-body {
@@ -20,6 +26,7 @@
   font-size: 1.6rem;
   line-height: 150%;
   color: var(--gray-color-600);
+
 }
 
 .text-hat {

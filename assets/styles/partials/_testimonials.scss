@@ -15,27 +15,61 @@
     justify-content: center;
     background: var(--primary-color-light);
 
-
+    width: 96px;
+    height: 88px;
+    padding: 32px;
 
     img {
-      width: 96px;
-      height: 88px;
-      padding: 32px;
+      width: 32px;
+      height: auto;
     }
 
-    &:nth-child(1) {
+    &:nth-child(3) {
       top: 0;
       left: 0;
       transform: translateY(-50%);
     }
 
-    &:nth-child(2) {
+    &:nth-child(4) {
       bottom: 0;
       right: 0;
       transform: translateY(50%);
     }
 
   }
+
+
+  .arrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    width: 8rem;
+    height: 8rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all .2s;
+
+
+    &:nth-child(1) {
+      left: 0%;
+
+      &:hover {
+        transform: translateY(-50%) scale(1.2);
+      }
+    }
+
+    &:nth-child(2) {
+      right: 0;
+      transform: translateY(-50%) rotate(180deg);
+
+      &:hover {
+        transform: translateY(-50%) rotate(180deg) scale(1.2);
+      }
+    }
+
+
+  }
+
 
   .container-testimonial {
     display: flex;
@@ -46,7 +80,6 @@
 
     >p {
       max-width: 1008px;
-      font-family: 'Poppins';
       font-weight: 600;
       font-size: 3.2rem;
       line-height: 150%;
@@ -77,10 +110,74 @@
       text-transform: uppercase;
 
 
-      color: #F8F9FA;
+      color: var(--gray-color-000);
 
 
     }
 
   }
+
+
+
+  @include responsive(m) {
+    margin-top: 100px;
+
+    .container-testimonial {
+      >p {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  @include responsive(s) {
+    margin-top: 10rem;
+
+    .container {
+      padding: 8rem 0;
+    }
+
+    .container-testimonial {
+      >p {
+        font-size: 2.4rem;
+      }
+
+      .testimonial-person {
+        font-size: 1.8rem;
+
+      }
+    }
+
+    .arrow {
+      transform: none;
+      bottom: 0;
+
+
+
+      &:nth-child(1):hover {
+        transform: scale(1.2);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(180deg);
+
+        &:hover {
+          transform: rotate(180deg) scale(1.2)
+        }
+
+      }
+
+    }
+
+    .quotation-marks {
+
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+
+      img {
+        width: 16px;
+      }
+    }
+  }
+
 }

@@ -56,17 +56,20 @@
 
 
 
-  // @include responsive(s) {
-  //   &::after {
-  //     display: none;
-  //   }
-
-  //   .cards {
-  //     display: none;
-  //   }
-  // }
 
   @include responsive(s) {
+
+    padding-top: 80px;
+    height: fit-content;
+
+    .content,
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
     &::after {
       display: none;
     }
