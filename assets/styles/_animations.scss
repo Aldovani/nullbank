@@ -1,0 +1,18 @@
+
+@keyframes flip-card {
+  0% {
+    transform: rotateX(-10deg) rotateY(10deg) rotate(-15deg);
+  }
+
+  40% {
+    transform: rotateX(0deg) rotateY(20deg);
+  }
+
+  60% {
+    transform: rotateX(180deg) rotateY(20deg);
+  }
+
+  100% {
+    transform: rotateX(190deg) rotateY(10deg) rotate(15deg);
+  }
+}

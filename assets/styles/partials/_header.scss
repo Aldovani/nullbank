@@ -1,5 +1,4 @@
 .header {
-
   .container {
     display: grid;
     grid-template-areas: "l n b";
@@ -27,7 +26,7 @@
     }
   }
 
-  .button {
+  div {
     grid-area: b;
   }
 
@@ -107,7 +106,7 @@
   bottom: 0;
   right: 0;
   transform: translateY(100%);
-  z-index: 3;
+  z-index: 5;
 
   display: flex;
   flex-direction: column;
