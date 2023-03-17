@@ -38,10 +38,10 @@
       padding: 32px 16px 24px 16px;
       border-radius: 8px;
       align-items: start;
-      transition: all .2s;
+      transition: all .2s !important;
 
       &:hover {
-        transform: scale(1.03);
+        transform: scale(1.03) !important;
       }
 
 
