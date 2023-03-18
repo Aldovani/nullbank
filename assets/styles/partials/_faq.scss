@@ -5,6 +5,16 @@
     display: grid;
     grid-template-columns: 420px 1fr;
     gap: 103px;
+
+  }
+
+  .content {
+    height: fit-content;
+    // position: relative;
+    position: sticky;
+    top: 64px;
+
+    left: 0;
   }
 
   @include responsive(m) {
@@ -17,12 +27,17 @@
 
     }
 
+    ul {
+      width: 100%;
+    }
+
     .content {
       justify-self: center;
     }
 
 
   }
+
   @include responsive(s) {
     margin-top: 100px;
 
@@ -106,7 +121,6 @@
 
 
   &.open {
-
     border-bottom: 1px solid var(--primary-color-main);
 
     p {

@@ -83,9 +83,8 @@
   @include responsive(s) {
 
     .container {
-      grid-template-areas: "l m";
+      display: flex;
       justify-content: space-between;
-      grid-template-columns: 136px auto;
     }
 
     .navigation,
