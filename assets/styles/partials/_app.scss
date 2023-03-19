@@ -8,7 +8,7 @@
 
     .phone {
       position: relative;
-      transform: translateX(104px) ;
+      transform: translateX(104px);
 
       >svg {
         width: 295px;
@@ -17,23 +17,30 @@
 
       .icon {
         position: absolute;
+        animation: move 2s ease-in infinite alternate;
 
         &:nth-child(1) {
           top: 76px;
           left: 0;
-          transform: translateX(-50%);
+          transform: translateY(0) translateX(-50%) scale(1.2);
+          animation-delay: .5s;
         }
 
         &:nth-child(2) {
           bottom: 0;
           left: 0;
-          transform: translateX(-50%) translateY(10px);
+          transform: translateY(0) translateX(-50%) scale(1.2);
+          animation-delay: 1.5s;
+
         }
 
         &:nth-child(3) {
           top: 248px;
           right: 0;
           transform: translateX(50%);
+          animation: move-2 2s 2s ease-in infinite alternate;
+
+
         }
       }
     }
@@ -100,4 +107,29 @@
     }
 
   }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateY(0) translateX(-50%) scale(1.2);
+
+  }
+
+  to {
+    transform: translateY(50px) translateX(-50%) scale(.9);
+  }
+
+}
+
+@keyframes move-2 {
+  from {
+    transform: translateY(0) translateX(50%);
+
+  }
+
+  to {
+    transform: translateY(50px) translateX(50%);
+  }
+
 }

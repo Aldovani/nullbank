@@ -10,10 +10,8 @@
 
   .content {
     height: fit-content;
-    // position: relative;
     position: sticky;
     top: 64px;
-
     left: 0;
   }
 
@@ -33,6 +31,7 @@
 
     .content {
       justify-self: center;
+      position: static;
     }
 
 
@@ -50,6 +49,7 @@
 
     .content {
       justify-self: center;
+      position: static;
     }
 
 

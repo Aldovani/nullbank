@@ -5,7 +5,6 @@
   .container {
     padding: 112px 0;
     position: relative;
-
   }
 
   .quotation-marks {
@@ -79,7 +78,7 @@
     gap: 20px;
 
     >p {
-      max-width: 1008px;
+      max-width: 80%;
       font-weight: 600;
       font-size: 3.2rem;
       line-height: 150%;
@@ -124,7 +123,8 @@
 
     .container-testimonial {
       >p {
-        font-size: 3.2rem;
+        display: inline-block;
+        font-size: 2.4rem;
       }
     }
   }
@@ -137,12 +137,16 @@
     }
 
     .container-testimonial {
+
+
       >p {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        max-width: 90%;
+
       }
 
       .testimonial-person {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
 
       }
     }
@@ -152,7 +156,7 @@
       bottom: 0;
 
       width: 4rem;
-    height: 4rem;
+      height: 4rem;
 
 
       &:nth-child(1):hover {

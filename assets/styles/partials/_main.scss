@@ -83,7 +83,7 @@ $height-card: 0.63 * $width-card;
     &.card-frente {
       background-image: url("../../../assets/images/card-frente.svg");
       background-size: cover;
-      animation: flip-card 5s linear infinite;
+      // animation: flip-card 5s linear infinite;
       z-index: -1;
       transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
     }
@@ -94,7 +94,7 @@ $height-card: 0.63 * $width-card;
       right: 0;
       z-index: -2;
       transform: rotate(-18.1deg);
-      animation: flip-card 12s 1s linear infinite;
+      // animation: flip-card 12s 1s linear infinite;
 
     }
   }

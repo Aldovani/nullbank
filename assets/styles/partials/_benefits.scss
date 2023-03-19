@@ -135,17 +135,17 @@
       font-size: 250px;
 
       &:nth-child(1) {
-        transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(5%, 10%);
+        transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(-5%, 20%);
 
 
         &:hover {
-          transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(10%, 20%);
+          transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(5%, 35%);
 
         }
       }
 
       &:nth-child(2) {
-        transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(10%, 20%);
+        transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0) translate(5%, 35%);
       }
     }
   }
