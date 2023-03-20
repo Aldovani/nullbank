@@ -55,7 +55,6 @@ $height-card: 0.63 * $width-card;
   .container-card {
     perspective: 500px;
     width: 100%;
-    background: red;
 
     position: relative;
     display: flex;
@@ -78,10 +77,9 @@ $height-card: 0.63 * $width-card;
     position: absolute;
     right: 0;
 
-    // change-bg-card 12s linear 0s infinite alternate;
 
     &.card-frente {
-      background-image: url("../../../assets/images/card-frente.svg");
+      background-image: url("../../assets/images/card-frente.svg");
       background-size: cover;
       // animation: flip-card 5s linear infinite;
       z-index: -1;
@@ -89,7 +87,7 @@ $height-card: 0.63 * $width-card;
     }
 
     &.card-verso {
-      background-image: url("../../../assets/images/card-verso.svg");
+      background-image: url("../../assets/images/card-verso.svg");
       background-size: cover;
       right: 0;
       z-index: -2;
