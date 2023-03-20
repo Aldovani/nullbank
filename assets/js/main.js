@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+  disable: "phone",
+});
 
 const questions = document.querySelectorAll(".question");
 

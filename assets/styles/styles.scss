@@ -1,11 +1,10 @@
- @import "reset", "responsive", 'patterns', "typography", "variables", "animations";
+ @import "reset", "responsive", 'patterns', "typography", "variables";
 
  body {
    background: var(--background-color);
    overflow-x: hidden;
-
-
  }
+
  @import "partials/header";
  @import "partials/main";
  @import "partials/cards";

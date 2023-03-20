@@ -1,3 +1,6 @@
+$width-card: 340px;
+$height-card: 0.63 * $width-card;
+
 .s-cards {
   margin-top: 150px;
 
@@ -32,19 +35,11 @@
       font-weight: 700;
       font-size: 20px;
       line-height: 26px;
-
-
     }
 
-    p {
-      font-family: 'Poppins';
-      font-weight: 400;
-      font-size: 1.6rem;
-      line-height: 150%;
-
-      color: var(--gray-color-700);
-
-    }
+      p {
+        color: var(--gray-color-700);
+      }
 
 
   }

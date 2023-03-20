@@ -223,20 +223,6 @@ svg {
   }
 }
 
-@keyframes flip-card {
-  0% {
-    transform: rotateX(-10deg) rotateY(10deg);
-  }
-  40% {
-    transform: rotateX(0deg) rotateY(20deg);
-  }
-  60% {
-    transform: rotateX(-10deg) rotateY(20deg);
-  }
-  100% {
-    transform: rotateX(0deg) rotateY(10deg);
-  }
-}
 body {
   background: var(--background-color);
   overflow-x: hidden;
@@ -324,8 +310,10 @@ body {
 
 .navigation-mobile {
   transition: all 0.3s;
+  width: 100%;
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -419,7 +407,6 @@ body {
 .main .container-card {
   perspective: 500px;
   width: 100%;
-  background: red;
   position: relative;
   display: flex;
   align-items: center;
@@ -436,13 +423,13 @@ body {
   right: 0;
 }
 .main .card.card-frente {
-  background-image: url("../../../assets/images/card-frente.svg");
+  background-image: url("../../assets/images/card-frente.svg");
   background-size: cover;
   z-index: -1;
   transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
 }
 .main .card.card-verso {
-  background-image: url("../../../assets/images/card-verso.svg");
+  background-image: url("../../assets/images/card-verso.svg");
   background-size: cover;
   right: 0;
   z-index: -2;
@@ -499,10 +486,6 @@ body {
   line-height: 26px;
 }
 .s-cards .content p {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 150%;
   color: var(--gray-color-700);
 }
 .s-cards .cards {
@@ -904,9 +887,9 @@ body {
   margin: 8px 0 32px;
 }
 .s-download .phone {
-  transform: translateX(-104px);
+  transform: translateX(104px);
 }
-.s-download .phone svg {
+.s-download .phone img {
   width: 100%;
   max-width: 295px;
   max-height: 603px;
@@ -928,7 +911,7 @@ body {
   .s-download .phone {
     transform: translateX(0);
   }
-  .s-download .phone svg {
+  .s-download .phone img {
     margin: 0 auto;
     width: 80%;
     height: auto;
