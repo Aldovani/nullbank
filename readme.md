@@ -42,7 +42,7 @@ NullBank é uma página institucional moderna e responsiva, projetada para um ba
 
 ## 📝 Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/license.md) para mais detalhes.
 
 ---
 
