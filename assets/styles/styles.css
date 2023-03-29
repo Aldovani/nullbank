@@ -106,14 +106,14 @@ svg {
   justify-content: center;
   background: var(--primary-color-light);
   border-radius: 16px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-out;
 }
 .icon svg {
   width: 4.8rem;
   height: 4.8rem;
 }
 .icon:hover {
-  transform: scale(1.15);
+  transform: scale(1.08);
 }
 @media screen and (max-width: 960px) {
   .icon {
@@ -273,11 +273,15 @@ body {
   width: 24px;
   height: 24px;
   display: block;
+  transition: all 0.3s ease;
   background-image: url("../../../assets/images/arrow-down.svg");
 }
 .header .navigation-link.dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
+}
+.header .navigation-link.dropdown:hover::after {
+  transform: translateY(15%);
 }
 @media screen and (max-width: 960px) {
   .header .container {
@@ -304,8 +308,8 @@ body {
   gap: 16px;
   padding: 16px 24px;
   border-radius: 4px;
-  box-shadow: 0px 64px 26px rgba(50, 74, 17, 0.01), 0px 36px 22px rgba(50, 74, 17, 0.03), 0px 16px 16px rgba(50, 74, 17, 0.04), 0px 4px 9px rgba(50, 74, 17, 0.05), 0px 0px 0px rgba(50, 74, 17, 0.05);
   transition: all 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .navigation-mobile {
@@ -456,6 +460,22 @@ body {
   }
 }
 
+@keyframes card-frente {
+  0% {
+    transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
+  }
+  100% {
+    transform: rotate(-4deg) translateY(-60px) translateX(-30px);
+  }
+}
+@keyframes card-verso {
+  0% {
+    transform: rotate(-18.1deg) translateY(0);
+  }
+  100% {
+    transform: rotate(-4deg) translateY(-10px) translateX(-50px);
+  }
+}
 .s-cards {
   margin-top: 150px;
 }
@@ -486,12 +506,42 @@ body {
   line-height: 26px;
 }
 .s-cards .content p {
-  color: var(--gray-color-700);
+  color: var(--gray-color-600);
 }
 .s-cards .cards {
-  max-width: 503px;
-  max-height: 440.65px;
-  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform: translateX(-80px);
+}
+.s-cards .shadow {
+  width: 422px;
+  transform: translateY(40px);
+  height: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 100%;
+  animation: shadow-move 3s ease 1s infinite alternate;
+}
+.s-cards .card {
+  z-index: 5;
+  display: block;
+  width: 285px;
+  height: 164px;
+  border-radius: 14.3559px;
+}
+.s-cards .card-one {
+  background: linear-gradient(114deg, #3777F4 -4.38%, #1B2A4C 105.88%);
+  border-radius: 14.3559px;
+  transform: matrix(0.94, 0.35, -0.36, 0.93, 0, 0) translateY(-10px) translateX(-12px);
+  animation: card-move-1 3s ease 1s infinite alternate;
+}
+.s-cards .card-two {
+  background: linear-gradient(114deg, #3777F4 -4.38%, #1B2A4C 105.88%);
+  transform: matrix(0.97, -0.23, 0.25, 0.97, 0, 0) translateX(28px);
+  z-index: -1;
+  animation: card-move-2 3s ease 1s infinite alternate;
 }
 @media screen and (max-width: 960px) {
   .s-cards .container {
@@ -507,6 +557,30 @@ body {
   }
 }
 
+@keyframes shadow-move {
+  0% {
+    transform: translateY(40px) scale(0.9);
+  }
+  100% {
+    transform: translateY(40px) scale(1);
+  }
+}
+@keyframes card-move-1 {
+  0% {
+    transform: matrix(0.94, 0.35, -0.36, 0.93, 0, 0) translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    transform: matrix(0.94, 0.35, -0.36, 0.93, 0, 0) translate3d(0, 20px, 0) rotate(-5deg);
+  }
+}
+@keyframes card-move-2 {
+  0% {
+    transform: matrix(0.97, -0.23, 0.25, 0.97, 0, 0) translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    transform: matrix(0.97, -0.23, 0.25, 0.97, 0, 0) translate3d(0, 20px, 0) rotate(5deg);
+  }
+}
 .s-app {
   margin-top: 200px;
 }
@@ -970,9 +1044,7 @@ body {
   flex-direction: column;
   padding: 32px;
   border-bottom: 1px solid var(--gray-color-400);
-  gap: 32px;
   cursor: pointer;
-  transition: all 0.2s;
 }
 .question-header {
   display: flex;
@@ -987,9 +1059,11 @@ body {
   color: var(--gray-color-900);
 }
 .question p {
+  max-height: 0;
   visibility: hidden;
   opacity: 0;
-  display: none;
+  transition: all 0.5s ease;
+  overflow: hidden;
 }
 .question .container-button {
   max-width: 28px;
@@ -1020,9 +1094,11 @@ body {
   border-bottom: 1px solid var(--primary-color-main);
 }
 .question.open p {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   visibility: visible;
   opacity: 1;
-  display: block;
+  margin-top: 32px;
 }
 .question.open span {
   background: transparent;
@@ -1033,7 +1109,6 @@ body {
 }
 .question:hover:is(:not(.open)) {
   border-color: var(--primary-color-main);
-  padding-bottom: 40px;
 }
 .question:hover:is(:not(.open)) span {
   background: var(--primary-color-main);

@@ -55,6 +55,8 @@
         width: 24px;
         height: 24px;
         display: block;
+        transition: all .3s ease;
+
         background-image: url("../../../assets/images/arrow-down.svg");
       }
 
@@ -63,6 +65,10 @@
         .dropdown-menu {
           opacity: 1;
           visibility: visible;
+        }
+
+        &::after {
+          transform: translateY(15%);
         }
 
       }
@@ -103,17 +109,16 @@
   padding: 16px 24px;
 
   border-radius: 4px;
-  box-shadow: 0px 64px 26px rgba(50, 74, 17, 0.01), 0px 36px 22px rgba(50, 74, 17, 0.03), 0px 16px 16px rgba(50, 74, 17, 0.04), 0px 4px 9px rgba(50, 74, 17, 0.05), 0px 0px 0px rgba(50, 74, 17, 0.05);
   transition: all .3s;
-
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 
 }
 
 .navigation-mobile {
 
   transition: all .3s;
-  
-  width:100%;
+
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -122,9 +127,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   background: var(--background-color);
-  
+
   visibility: hidden;
   opacity: 0;
   pointer-events: none;

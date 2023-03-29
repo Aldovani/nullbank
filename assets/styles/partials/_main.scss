@@ -72,6 +72,7 @@ $height-card: 0.63 * $width-card;
       background-size: cover;
       z-index: -1;
       transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
+      // animation: card-frente 2s alternate ease infinite;
     }
 
     &.card-verso {
@@ -80,6 +81,7 @@ $height-card: 0.63 * $width-card;
       right: 0;
       z-index: -2;
       transform: rotate(-18.1deg);
+      // animation: card-verso 2s  2s alternate ease infinite;
 
     }
   }
@@ -106,4 +108,27 @@ $height-card: 0.63 * $width-card;
     }
   }
 
+}
+
+@keyframes card-frente {
+  0% {
+    transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
+
+  }
+
+  100% {
+    transform: rotate(-4deg) translateY(-60px) translateX(-30px);
+
+  }
+}
+@keyframes  card-verso {
+  0% {
+    transform: rotate(-18.1deg) translateY(0);
+
+  }
+
+  100% {
+    transform: rotate(-4deg) translateY(-10px) translateX(-50px);
+
+  }
 }

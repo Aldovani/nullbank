@@ -1,5 +1,6 @@
-AOS.init({
-  disable: "phone",
+  AOS.init({
+  easing: "ease-out-quart",
+  duration: 400,
 });
 
 const questions = document.querySelectorAll(".question");
@@ -8,7 +9,13 @@ questions.forEach((item) => {
   item.addEventListener(
     "click",
     () => {
+      if (item.classList.contains("open")) {
+        item.classList.remove("open");
+        return;
+      }
+
       questions.forEach((e) => e.classList.remove("open"));
+
       item.classList.toggle("open");
     },
     true

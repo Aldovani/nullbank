@@ -61,9 +61,8 @@
   flex-direction: column;
   padding: 32px;
   border-bottom: 1px solid var(--gray-color-400);
-  gap: 32px;
   cursor: pointer;
-  transition: all .2s;
+  // transition: all .2s ease !important;
 
   &-header {
     display: flex;
@@ -80,9 +79,11 @@
   }
 
   p {
+    max-height: 0;
     visibility: hidden;
     opacity: 0;
-    display: none;
+    transition: all .5s ease;
+    overflow: hidden;
   }
 
   .container-button {
@@ -124,9 +125,11 @@
     border-bottom: 1px solid var(--primary-color-main);
 
     p {
+      max-height: fit-content;
       visibility: visible;
       opacity: 1;
-      display: block;
+      margin-top: 32px;
+
     }
 
     span {
@@ -141,9 +144,10 @@
   }
 
   &:hover {
+
     &:is(:not(.open)) {
       border-color: var(--primary-color-main);
-      padding-bottom: 40px;
+      // padding-bottom: 40px;
 
       span {
         background: var(--primary-color-main);
@@ -154,6 +158,7 @@
         }
       }
     }
+
 
   }
 
