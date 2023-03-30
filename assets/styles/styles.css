@@ -381,6 +381,7 @@ body {
   padding-top: 150px;
   position: relative;
   height: 847px;
+  height: 100svh;
 }
 .main::after {
   content: "";
@@ -390,7 +391,7 @@ body {
   top: 0;
   position: absolute;
   z-index: -1;
-  transform: translateY(-100px);
+  transform: translateY(-80px);
   background: linear-gradient(157.9deg, #4C6EF5 -0.59%, #1E325F 113.51%);
 }
 .main .container {
@@ -431,6 +432,8 @@ body {
   background-size: cover;
   z-index: -1;
   transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
+  transform-origin: center;
+  animation: tilt 12s ease infinite alternate;
 }
 .main .card.card-verso {
   background-image: url("../../assets/images/card-verso.svg");
@@ -460,20 +463,34 @@ body {
   }
 }
 
-@keyframes card-frente {
+@keyframes tilt {
+  0%, 100% {
+    transform: translate3d(0, 0, 1px) rotate(-9deg) rotateX(5deg) translateY(-100px) translateX(-60px);
+  }
+  50% {
+    transform: translate3d(0, 0, 1px) rotateY(-9deg) rotateX(5deg) translateY(-110px) translateX(-65px);
+  }
+}
+@keyframes card-move-1-c {
   0% {
     transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
   }
   100% {
-    transform: rotate(-4deg) translateY(-60px) translateX(-30px);
+    transform: rotate(9deg) translateY(-100px) translateX(-1000px);
   }
 }
-@keyframes card-verso {
+@keyframes card-move-2-c {
   0% {
-    transform: rotate(-18.1deg) translateY(0);
+    transform: rotate(-18.1deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(-18.1deg) translate(20px, -20px);
+  }
+  60% {
+    transform: rotate(-32deg) translate(20px, -20px);
   }
   100% {
-    transform: rotate(-4deg) translateY(-10px) translateX(-50px);
+    transform: rotate(-16deg) translate(20px, -20px);
   }
 }
 .s-cards {
@@ -702,6 +719,7 @@ body {
 .s-benefits .container-cards img {
   width: 40px;
   height: 40px;
+  transition: all 0.2s;
 }
 .s-benefits .container-cards .card {
   display: flex;
@@ -710,10 +728,23 @@ body {
   padding: 32px 16px 24px 16px;
   border-radius: 8px;
   align-items: start;
-  transition: all 0.2s !important;
+  overflow: hidden;
+  position: relative;
 }
-.s-benefits .container-cards .card:hover {
-  transform: scale(1.03) !important;
+.s-benefits .container-cards .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 24px;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 30px;
+  border-radius: 0 0 8px 8px;
+  background: var(--primary-color-dark);
+}
+.s-benefits .container-cards .card:hover::after {
+  transform: translateY(0);
 }
 .s-benefits .container-cards .card strong {
   font-family: "Poppins";

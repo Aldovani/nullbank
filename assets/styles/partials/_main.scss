@@ -6,6 +6,7 @@ $height-card: 0.63 * $width-card;
   position: relative;
 
   height: 847px;
+  height: 100svh;
 
   &::after {
     content: "";
@@ -15,7 +16,7 @@ $height-card: 0.63 * $width-card;
     top: 0;
     position: absolute;
     z-index: -1;
-    transform: translateY(-100px);
+    transform: translateY(-80px);
     background: linear-gradient(157.9deg, #4C6EF5 -0.59%, #1E325F 113.51%);
   }
 
@@ -72,7 +73,10 @@ $height-card: 0.63 * $width-card;
       background-size: cover;
       z-index: -1;
       transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
-      // animation: card-frente 2s alternate ease infinite;
+      transform-origin: center;
+      // animation: card-move-1-c 1s alternate ease infinite;
+      animation: tilt 12s ease infinite alternate;
+
     }
 
     &.card-verso {
@@ -81,7 +85,8 @@ $height-card: 0.63 * $width-card;
       right: 0;
       z-index: -2;
       transform: rotate(-18.1deg);
-      // animation: card-verso 2s  2s alternate ease infinite;
+
+      // animation: tilt 12s ease infinite alternate;
 
     }
   }
@@ -110,25 +115,81 @@ $height-card: 0.63 * $width-card;
 
 }
 
-@keyframes card-frente {
+@keyframes tilt {
+
+  0%,
+  100% {
+    // transform: translate3d(0, 0, 1px) rotateY(-9deg) rotateX(5deg);
+    transform: translate3d(0, 0, 1px) 
+    rotate(-9deg) rotateX(5deg)
+    translateY(-100px) 
+    translateX(-60px);
+
+
+  }
+
+  50% {
+    transform: translate3d(0, 0, 1px) 
+    rotateY(-9deg) rotateX(5deg)
+    translateY(-110px) 
+    translateX(-65px);
+    // transform: translate3d(0, 0, 0.01px)  rotateY(-20deg) rotateX(5deg);
+  }
+
+}
+
+@keyframes card-move-1-c {
   0% {
     transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
-
   }
 
   100% {
-    transform: rotate(-4deg) translateY(-60px) translateX(-30px);
-
+    transform: rotate(9deg) translateY(-100px) translateX(-1000px);
   }
 }
-@keyframes  card-verso {
+
+@keyframes card-move-2-c {
+
   0% {
-    transform: rotate(-18.1deg) translateY(0);
+    transform: rotate(-18.1deg) translate(0, 0);
+  }
+
+  50% {
+    transform: rotate(-18.1deg) translate(20px, -20px);
+
+  }
+
+  60% {
+    transform: rotate(-32deg) translate(20px, -20px);
 
   }
 
   100% {
-    transform: rotate(-4deg) translateY(-10px) translateX(-50px);
+    transform: rotate(-16deg) translate(20px, -20px);
 
   }
 }
+
+
+// @keyframes card-frente {
+//   0% {
+//     transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
+
+//   }
+
+//   100% {
+//     transform: rotate(-4deg) translateY(-60px) translateX(-30px);
+
+//   }
+// }
+// @keyframes  card-verso {
+//   0% {
+//     transform: rotate(-18.1deg) translateY(0);
+
+//   }
+
+//   100% {
+//     transform: rotate(-4deg) translateY(-10px) translateX(-50px);
+
+//   }
+// }
