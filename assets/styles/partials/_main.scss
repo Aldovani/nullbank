@@ -2,16 +2,14 @@ $width-card: 340px;
 $height-card: 0.63 * $width-card;
 
 .main {
-  padding-top: 150px;
-  position: relative;
-
-  height: 847px;
-  height: 100svh;
+  height: calc(100svh - 80px);
+  display: flex;
+  align-items: center;
 
   &::after {
     content: "";
     width: 50vw;
-    height: 100%;
+    height: calc(100% + 80px);
     right: 0;
     top: 0;
     position: absolute;
@@ -54,8 +52,8 @@ $height-card: 0.63 * $width-card;
   }
 
   .card {
-    width: $width-card;
-    height: $height-card;
+    width: $width-card ;
+    height: $height-card ;
 
     border-radius: 12px;
 
@@ -74,8 +72,7 @@ $height-card: 0.63 * $width-card;
       z-index: -1;
       transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
       transform-origin: center;
-      // animation: card-move-1-c 1s alternate ease infinite;
-      animation: tilt 12s ease infinite alternate;
+      animation: card-move-front 12s ease infinite alternate;
 
     }
 
@@ -86,15 +83,14 @@ $height-card: 0.63 * $width-card;
       z-index: -2;
       transform: rotate(-18.1deg);
 
-      // animation: tilt 12s ease infinite alternate;
+      animation: card-move-verso 12s ease infinite alternate;
 
     }
   }
 
   @include responsive(s) {
+    height: calc(100svh - 66px);
 
-    padding-top: 80px;
-    height: fit-content;
 
     .content,
     .container {
@@ -115,81 +111,32 @@ $height-card: 0.63 * $width-card;
 
 }
 
-@keyframes tilt {
+@keyframes card-move-front {
 
   0%,
   100% {
-    // transform: translate3d(0, 0, 1px) rotateY(-9deg) rotateX(5deg);
-    transform: translate3d(0, 0, 1px) 
-    rotate(-9deg) rotateX(5deg)
-    translateY(-100px) 
-    translateX(-60px);
-
-
+    transform: translate3d(0, 0, 1px) rotate(-9deg) rotateX(5deg) translateY(-100px) translateX(-60px);
   }
 
   50% {
-    transform: translate3d(0, 0, 1px) 
-    rotateY(-9deg) rotateX(5deg)
-    translateY(-110px) 
-    translateX(-65px);
-    // transform: translate3d(0, 0, 0.01px)  rotateY(-20deg) rotateX(5deg);
+    transform:
+      translate3d(0, 0, 1px) rotateY(-9deg) rotateX(5deg) translateY(-110px) translateX(-65px);
   }
 
 }
 
-@keyframes card-move-1-c {
-  0% {
-    transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
-  }
 
+@keyframes card-move-verso {
+
+  0%,
   100% {
-    transform: rotate(9deg) translateY(-100px) translateX(-1000px);
-  }
-}
-
-@keyframes card-move-2-c {
-
-  0% {
-    transform: rotate(-18.1deg) translate(0, 0);
+    transform:
+      translate3d(0, 0, 1px) rotate(-18deg) rotateX(5deg) translate(0, 0)
   }
 
   50% {
-    transform: rotate(-18.1deg) translate(20px, -20px);
-
+    transform:
+      translate3d(0, 0, 1px) rotate(-9deg) rotateX(5deg) translate(10px, 5px)
   }
 
-  60% {
-    transform: rotate(-32deg) translate(20px, -20px);
-
-  }
-
-  100% {
-    transform: rotate(-16deg) translate(20px, -20px);
-
-  }
 }
-
-
-// @keyframes card-frente {
-//   0% {
-//     transform: rotate(-9.11deg) translateY(-100px) translateX(-60px);
-
-//   }
-
-//   100% {
-//     transform: rotate(-4deg) translateY(-60px) translateX(-30px);
-
-//   }
-// }
-// @keyframes  card-verso {
-//   0% {
-//     transform: rotate(-18.1deg) translateY(0);
-
-//   }
-
-//   100% {
-//     transform: rotate(-4deg) translateY(-10px) translateX(-50px);
-
-//   }
-// }

@@ -48,7 +48,7 @@
     }
 
     .content {
-      justify-self: center;
+      justify-self: start;
       position: static;
     }
 
@@ -62,7 +62,6 @@
   padding: 32px;
   border-bottom: 1px solid var(--gray-color-400);
   cursor: pointer;
-  // transition: all .2s ease !important;
 
   &-header {
     display: flex;
@@ -147,7 +146,6 @@
 
     &:is(:not(.open)) {
       border-color: var(--primary-color-main);
-      // padding-bottom: 40px;
 
       span {
         background: var(--primary-color-main);

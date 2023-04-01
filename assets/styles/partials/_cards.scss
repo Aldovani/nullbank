@@ -57,7 +57,7 @@ $height-card: 0.63 * $width-card;
     width: 422px;
     transform: translateY(40px);
     height: 20px;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(52, 58, 64, 0.03);
     border-radius: 100%;
     animation: shadow-move 3s ease 1s infinite alternate;
   }
@@ -89,14 +89,11 @@ $height-card: 0.63 * $width-card;
 
   }
 
-
-
-
   @include responsive(s) {
 
     .container {
       flex-direction: column;
-      gap: 64px;
+      gap: 80px;
 
       li {
         grid-template-columns: 64px 1fr;
@@ -109,7 +106,16 @@ $height-card: 0.63 * $width-card;
     }
   }
 
-
+  @include responsive(xs) {
+    .card {
+      width: 225px;
+      height: 134px;
+      border-radius: 14.3559px;
+    }
+    .shadow{
+      width: 100%;
+    }
+  }
 }
 
 @keyframes shadow-move {
