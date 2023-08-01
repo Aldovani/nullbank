@@ -1,585 +1,1154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Nullbank</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="assets/styles/styles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <title>Nullbank</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+  </head>
 
-  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
-</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo" data-aos="fade-down" data-aos-delay="5"
+          >Nullbank</a
+        >
+        <!-- ======== Desktop ======== -->
+        <nav class="navigation">
+          <ul>
+            <li
+              class="navigation-link dropdown"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <a href=""> O NullBank </a>
 
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="" class="nav-link-dropdown">Sobre</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="nav-link-dropdown">Blog</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="nav-link-dropdown">Comunidade</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="nav-link-dropdown">Investidores</a>
+                </li>
+              </ul>
+            </li>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <a href="#" class="logo" data-aos="fade-down" data-aos-delay="5">Nullbank</a>
-      <!-- ======== Desktop ======== -->
-      <nav class="navigation">
-        <ul>
-          <li class="navigation-link dropdown" data-aos="fade-down" data-aos-delay="100">
-            <a href=""> O NullBank </a>
+            <li
+              class="navigation-link dropdown"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
+              <a href=""> Para voce </a>
 
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">
-                <a href="" class="nav-link-dropdown">Sobre</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="" class="nav-link-dropdown">Blog</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="" class="nav-link-dropdown">Comunidade</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="" class="nav-link-dropdown">Investidores</a>
-              </li>
-            </ul>
-          </li>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="" class="nav-link-dropdown">Pix</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="nav-link-dropdown">Cartões</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="nav-link-dropdown">APP</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="nav-link-dropdown">Seguros</a>
+                </li>
+              </ul>
+            </li>
 
-          <li class="navigation-link dropdown" data-aos="fade-down" data-aos-delay="200">
-            <a href=""> Para voce </a>
+            <li
+              class="navigation-link"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <a href="#questions">Perguntas</a>
+            </li>
+          </ul>
+        </nav>
 
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">
-                <a href="" class="nav-link-dropdown">Pix</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="" class="nav-link-dropdown">Cartões</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="" class="nav-link-dropdown">APP</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="" class="nav-link-dropdown">Seguros</a>
-              </li>
-            </ul>
-          </li>
+        <div data-aos="fade-down" data-aos-delay="350">
+          <a href="" class="button secondary">
+            <span> Baixe o APP</span>
+          </a>
+        </div>
 
-          <li class="navigation-link" data-aos="fade-down" data-aos-delay="300">
-            <a href="">Perguntas</a>
-          </li>
-        </ul>
-      </nav>
+        <!-- ======== Mobile ======== -->
 
-      <div data-aos="fade-down" data-aos-delay="350">
-        <a href="" class="button secondary" >
-          <span> Baixe o APP</span>
-        </a>
-      </div>
+        <nav class="navigation-mobile">
+          <ul>
+            <li class="navigation-link">
+              <a href="#"> O NullBank </a>
+            </li>
 
-      <!-- ======== Mobile ======== -->
+            <li class="navigation-link">
+              <a href="#"> Para voce </a>
+            </li>
 
-      <nav class="navigation-mobile">
-        <ul>
-          <li class="navigation-link">
-            <a href="#"> O NullBank </a>
-          </li>
+            <li class="navigation-link">
+              <a href="#questions">Perguntas</a>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navigation-link">
-            <a href="#"> Para voce </a>
-          </li>
-
-          <li class="navigation-link">
-            <a href="#">Perguntas</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="container">
-      <div class="content" data-aos="fade-up" data-aos-delay="150">
-        <h1 class="text-display">
-          Banco <span>100% digital</span> e com tarifas <span>nulas</span>
-        </h1>
-        <p class="text-body">
-          O banco digital que oferece serviços financeiros sem complicações e
-          tarifas. Mantenha suas finanças sob controle com segurança e
-          agilidade.
-        </p>
-        <button class="button">Baixe o app</button>
-      </div>
-
-      <div class="container-card" class="content" data-aos="fade-up" data-aos-delay="200">
-        <div class="card card-frente"></div>
-        <div class="card card-verso"></div>
-      </div>
-    </div>
-  </main>
-
-  <section class="s-cards">
-    <div class="container">
-      <div class="content">
-        <span class="text-hat" data-aos="fade-up" data-aos-delay="60">cartões</span>
-        <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">
-          Descubra as vantagens dos nossos Cartões
-        </h2>
-        <ul>
-          <li data-aos="fade-up" data-aos-delay="100">
-            <div class="icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M41 44V20H7V44H41Z" fill="#D9D9D9" />
-                <path d="M41 44V20H7V44H41Z" fill="url(#paint0_linear_848_302)" />
-                <path d="M41 44V20H7V44H41Z" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M24 44V20" stroke="#E7F5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M41 44H7" stroke="#E7F5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M44 12H4V20H44V12Z" fill="url(#paint1_linear_848_302)" stroke="#F8F9FA" stroke-width="2"
-                  stroke-linejoin="round" />
-                <path d="M16 4L24 12L32 4" stroke="#E7F5FF" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_848_302" x1="6.18345" y1="17.8818" x2="44.9439" y2="42.3268"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_848_302" x1="3.03936" y1="11.2939" x2="13.7433" y2="35.1198"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <div class="info">
-              <h4>Recompensas</h4>
-              <p class="text-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et
-              </p>
-            </div>
-          </li>
-
-          <li data-aos="fade-up" data-aos-delay="100">
-            <div class="icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 13H44V37H4V13Z" fill="url(#paint0_linear_848_319)" stroke="#F8F9FA" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 21C8.41828 21 12 17.4183 12 13H4V21Z"
-                  stroke="#E7F5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 29C8.41828 29 12 32.5817 12 37H4V29Z"
-                  stroke="#E7F5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M44 29V37H36C36 32.5817 39.5817 29 44 29Z"
-                  stroke="#E7F5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M44 21C39.5817 21 36 17.4183 36 13H44V21Z"
-                  stroke="#E7F5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M24 31C26.7614 31 29 28.3137 29 25C29 21.6863 26.7614 19 24 19C21.2386 19 19 21.6863 19 25C19 28.3137 21.2386 31 24 31Z"
-                  stroke="#F8F9FA" stroke-width="2" stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_848_319" x1="3.03936" y1="10.8818" x2="44.147" y2="41.3822"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <div class="info">
-              <h4>Cashback</h4>
-              <p class="text-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et
-              </p>
-            </div>
-          </li>
-
-          <li data-aos="fade-up" data-aos-delay="100">
-            <div class="icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M11 16C13.7614 16 16 13.7614 16 11C16 8.23858 13.7614 6 11 6C8.23858 6 6 8.23858 6 11C6 13.7614 8.23858 16 11 16Z"
-                  fill="url(#paint0_linear_848_343)" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M37 42C39.7614 42 42 39.7614 42 37C42 34.2386 39.7614 32 37 32C34.2386 32 32 34.2386 32 37C32 39.7614 34.2386 42 37 42Z"
-                  fill="url(#paint1_linear_848_343)" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M42 6L6 42L42 6Z" fill="url(#paint2_linear_848_343)" />
-                <path d="M42 6L6 42" stroke="url(#paint3_linear_848_343)" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_848_343" x1="5.75984" y1="5.11742" x2="19.0587" y2="11.0378"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_848_343" x1="31.7598" y1="31.1174" x2="45.0587" y2="37.0378"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                  <linearGradient id="paint2_linear_848_343" x1="5.13542" y1="2.82271" x2="53.0112" y2="24.136"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                  <linearGradient id="paint3_linear_848_343" x1="5.13542" y1="2.82271" x2="53.0112" y2="24.136"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <div class="info">
-              <h4>Descontos</h4>
-              <p class="text-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- data-aos="fade-left" data-aos-delay="100" -->
-      <div class="cards" data-aos="fade-up">
-        <div class="card card-one"></div>
-        <div class="card card-two"></div>
-        <div class="shadow"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s-app">
-    <div class="container">
-      <div data-aos="fade-up" data-aos-delay="60">
-        <div class="phone">
-          <div class="icons">
-
-            <div class="icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6 9.25576L24.0086 4.00012L42 9.25576V20.0338C42 31.3623 34.7502 41.4195 24.0026 45.0006C13.2521 41.4196 6 31.3601 6 20.0288V9.25576Z"
-                  fill="url(#paint0_linear_837_1371)" />
-                <path d="M15 23L22 30L34 18" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_837_1371" x1="5.13542" y1="0.381496" x2="54.8964" y2="19.8323"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-
-            <div class="icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6 8.25564L24.0086 3L42 8.25564V19.0337C42 30.3622 34.7502 40.4194 24.0026 44.0005C13.2521 40.4195 6 30.36 6 19.0287V8.25564Z"
-                  fill="url(#paint0_linear_840_1392)" />
-                <path d="M17 19H31" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M17 25H31" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M31 19L26 14" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M22 30L17 25" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_840_1392" x1="5.13542" y1="-0.618626" x2="54.8964" y2="18.8322"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-
-            <div class="icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
-                  fill="url(#paint0_linear_840_1388)" />
-                <path d="M24.009 12.0001L24.0078 24.0089L32.4872 32.4883" stroke="#F8F9FA" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_840_1388" x1="3.03936" y1="0.469676" x2="56.2347" y2="24.1511"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </div>
-
-          <svg viewBox="0 0 295 603" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="5" width="279" height="593" rx="39" fill="url(#paint0_linear_837_1032)" stroke="#DBE4FF"
-              stroke-width="10" />
-            <rect x="108.5" y="17.5" width="77" height="23" rx="10.5" fill="#DBE4FF" stroke="#DBE4FF" />
-            <circle cx="174" cy="29" r="4" fill="#4C6EF5" />
-            <path d="M0 107C0 106.448 0.447715 106 1 106H3V127H1C0.447715 127 0 126.552 0 126V107Z" fill="#4C6EF5" />
-            <path d="M0 147C0 146.448 0.447715 146 1 146H3V188H1C0.447715 188 0 187.552 0 187V147Z" fill="#4C6EF5" />
-            <path d="M0 199C0 198.448 0.447715 198 1 198H3V240H1C0.447715 240 0 239.552 0 239V199Z" fill="#4C6EF5" />
-            <path d="M295 240C295 240.552 294.552 241 294 241H292V175H294C294.552 175 295 175.448 295 176V240Z"
-              fill="#4C6EF5" />
-            <defs>
-              <linearGradient id="paint0_linear_837_1032" x1="92.902" y1="-81.1594" x2="570.056" y2="481.949"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#4C6EF5" />
-                <stop offset="1" stop-color="#1E325F" />
-              </linearGradient>
-            </defs>
-          </svg>
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
+    </header>
 
-      <div class="content">
-        <span class="text-hat" data-aos="fade-up" data-aos-delay="60">App</span>
-        <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">
-          Faça tudo pelo app
-        </h2>
-        <p class="text-body" data-aos="fade-up" data-aos-delay="100">
-          Tudo o que você precisa, apenas um aplicativo. Crie uma conta, ative
-          seu cartão e economize em tudo, desde mercearias até carros
-          alugados.
-        </p>
+    <main class="main">
+      <div class="container">
+        <div class="content" data-aos="fade-up" data-aos-delay="150">
+          <h1 class="text-display">
+            Banco <span>100% digital</span> e com tarifas <span>nulas</span>
+          </h1>
+          <p class="text-body">
+            O banco digital que oferece serviços financeiros sem complicações e
+            tarifas. Mantenha suas finanças sob controle com segurança e
+            agilidade.
+          </p>
+          <button class="button">Baixe o app</button>
+        </div>
 
-        <ul>
-          <li data-aos="fade-up" data-aos-delay="100">
-            <div class="icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6 9.25576L24.0086 4.00012L42 9.25576V20.0338C42 31.3623 34.7502 41.4195 24.0026 45.0006C13.2521 41.4196 6 31.3601 6 20.0288V9.25576Z"
-                  fill="url(#paint0_linear_837_1371)" />
-                <path d="M15 23L22 30L34 18" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_837_1371" x1="5.13542" y1="0.381496" x2="54.8964" y2="19.8323"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et
-            </p>
-          </li>
-
-          <li data-aos="fade-up" data-aos-delay="100">
-            <div class="icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
-                  fill="url(#paint0_linear_840_1388)" />
-                <path d="M24.009 12.0001L24.0078 24.0089L32.4872 32.4883" stroke="#F8F9FA" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_840_1388" x1="3.03936" y1="0.469676" x2="56.2347" y2="24.1511"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et
-            </p>
-          </li>
-
-          <li data-aos="fade-up" data-aos-delay="100">
-            <div class="icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6 8.25564L24.0086 3L42 8.25564V19.0337C42 30.3622 34.7502 40.4194 24.0026 44.0005C13.2521 40.4195 6 30.36 6 19.0287V8.25564Z"
-                  fill="url(#paint0_linear_840_1392)" />
-                <path d="M17 19H31" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M17 25H31" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M31 19L26 14" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M22 30L17 25" stroke="#F8F9FA" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <defs>
-                  <linearGradient id="paint0_linear_840_1392" x1="5.13542" y1="-0.618626" x2="54.8964" y2="18.8322"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#3777F4" />
-                    <stop offset="1" stop-color="#1B2A4C" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="s-benefits">
-    <div class="container">
-      <div class="content">
-        <span class="text-hat" data-aos="fade-up" data-aos-delay="60">vantagens</span>
-        <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">
-          Quais as vantagens de usar NullBank?
-        </h2>
-
-        <div class="container-cards">
-          <div class="card" data-grid="p" data-aos="fade-up" data-aos-delay="400">
-            <img src="assets/images/pix.svg" alt="Pix" />
-            <strong>Pix</strong>
-            <p class="text-body">
-              Transações rápidas e seguras com o Pix através do NullBank
-            </p>
-          </div>
-          <div class="card" data-grid="s" data-aos="fade-up" data-aos-delay="350">
-            <img src="assets/images/seguranca.svg" alt="Segurança" />
-            <strong>Segurança</strong>
-            <p class="text-body">
-              Proteção avançada de informações financeiras
-            </p>
-          </div>
-          <div class="card" data-grid="t" data-aos="fade-up" data-aos-delay="300">
-            <img src="assets/images/transacao.svg" alt="Transação" />
-            <strong>Transação</strong>
-            <p class="text-body">
-              Realize Transações Rápidas e Convenientes com o NullBank.
-            </p>
-          </div>
-          <div class="card" data-grid="c" data-aos="fade-up" data-aos-delay="250">
-            <img src="assets/images/card-icon.svg" alt="cartão" />
-            <strong>Cartão</strong>
-            <p class="text-body">
-              Compre com Liberdade e Aproveite Vantagens Exclusivas.
-            </p>
-          </div>
-
-          <div class="card" data-grid="v" data-aos="fade-up" data-aos-delay="150">
-            <img src="assets/images/tempo.svg" alt="Velocidade" />
-            <strong>Velocidade</strong>
-            <p class="text-body">
-              Interface clara e intuitiva para gerenciar suas finanças.
-            </p>
-          </div>
-
-          <div class="card" data-grid="v-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/images/user.svg" alt="Velocidade" />
-            <strong>Disponibilidade</strong>
-            <p class="text-body">
-              serviços bancários em horários e locais convenientes para os clientes. </p>
-          </div>
+        <div
+          class="container-card"
+          class="content"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="card card-frente"></div>
+          <div class="card card-verso"></div>
         </div>
       </div>
-      <div class="text">
-        <h4 class="text-display">Null</h4>
-        <h4 class="text-display">Null</h4>
+    </main>
+
+    <section class="s-cards">
+      <div class="container">
+        <div class="content">
+          <span class="text-hat" data-aos="fade-up" data-aos-delay="60"
+            >cartões</span
+          >
+          <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">
+            Descubra as vantagens dos nossos Cartões
+          </h2>
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <div class="icon">
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M41 44V20H7V44H41Z" fill="#D9D9D9" />
+                  <path
+                    d="M41 44V20H7V44H41Z"
+                    fill="url(#paint0_linear_848_302)"
+                  />
+                  <path
+                    d="M41 44V20H7V44H41Z"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M24 44V20"
+                    stroke="#E7F5FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M41 44H7"
+                    stroke="#E7F5FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M44 12H4V20H44V12Z"
+                    fill="url(#paint1_linear_848_302)"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 4L24 12L32 4"
+                    stroke="#E7F5FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_848_302"
+                      x1="6.18345"
+                      y1="17.8818"
+                      x2="44.9439"
+                      y2="42.3268"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_848_302"
+                      x1="3.03936"
+                      y1="11.2939"
+                      x2="13.7433"
+                      y2="35.1198"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="info">
+                <h4>Recompensas</h4>
+                <p class="text-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <div class="icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 13H44V37H4V13Z"
+                    fill="url(#paint0_linear_848_319)"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 21C8.41828 21 12 17.4183 12 13H4V21Z"
+                    stroke="#E7F5FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 29C8.41828 29 12 32.5817 12 37H4V29Z"
+                    stroke="#E7F5FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M44 29V37H36C36 32.5817 39.5817 29 44 29Z"
+                    stroke="#E7F5FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M44 21C39.5817 21 36 17.4183 36 13H44V21Z"
+                    stroke="#E7F5FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M24 31C26.7614 31 29 28.3137 29 25C29 21.6863 26.7614 19 24 19C21.2386 19 19 21.6863 19 25C19 28.3137 21.2386 31 24 31Z"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_848_319"
+                      x1="3.03936"
+                      y1="10.8818"
+                      x2="44.147"
+                      y2="41.3822"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="info">
+                <h4>Cashback</h4>
+                <p class="text-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <div class="icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 16C13.7614 16 16 13.7614 16 11C16 8.23858 13.7614 6 11 6C8.23858 6 6 8.23858 6 11C6 13.7614 8.23858 16 11 16Z"
+                    fill="url(#paint0_linear_848_343)"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M37 42C39.7614 42 42 39.7614 42 37C42 34.2386 39.7614 32 37 32C34.2386 32 32 34.2386 32 37C32 39.7614 34.2386 42 37 42Z"
+                    fill="url(#paint1_linear_848_343)"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M42 6L6 42L42 6Z"
+                    fill="url(#paint2_linear_848_343)"
+                  />
+                  <path
+                    d="M42 6L6 42"
+                    stroke="url(#paint3_linear_848_343)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_848_343"
+                      x1="5.75984"
+                      y1="5.11742"
+                      x2="19.0587"
+                      y2="11.0378"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_848_343"
+                      x1="31.7598"
+                      y1="31.1174"
+                      x2="45.0587"
+                      y2="37.0378"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint2_linear_848_343"
+                      x1="5.13542"
+                      y1="2.82271"
+                      x2="53.0112"
+                      y2="24.136"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint3_linear_848_343"
+                      x1="5.13542"
+                      y1="2.82271"
+                      x2="53.0112"
+                      y2="24.136"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="info">
+                <h4>Descontos</h4>
+                <p class="text-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- data-aos="fade-left" data-aos-delay="100" -->
+        <div class="cards" data-aos="fade-up">
+          <div class="card card-one"></div>
+          <div class="card card-two"></div>
+          <div class="shadow"></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="s-testimonials ">
+    <section class="s-app">
+      <div class="container">
+        <div data-aos="fade-up" data-aos-delay="60">
+          <div class="phone">
+            <div class="icons">
+              <div class="icon">
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9.25576L24.0086 4.00012L42 9.25576V20.0338C42 31.3623 34.7502 41.4195 24.0026 45.0006C13.2521 41.4196 6 31.3601 6 20.0288V9.25576Z"
+                    fill="url(#paint0_linear_837_1371)"
+                  />
+                  <path
+                    d="M15 23L22 30L34 18"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_837_1371"
+                      x1="5.13542"
+                      y1="0.381496"
+                      x2="54.8964"
+                      y2="19.8323"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
 
-    <div class="container ">
+              <div class="icon">
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 8.25564L24.0086 3L42 8.25564V19.0337C42 30.3622 34.7502 40.4194 24.0026 44.0005C13.2521 40.4195 6 30.36 6 19.0287V8.25564Z"
+                    fill="url(#paint0_linear_840_1392)"
+                  />
+                  <path
+                    d="M17 19H31"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 25H31"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31 19L26 14"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 30L17 25"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_840_1392"
+                      x1="5.13542"
+                      y1="-0.618626"
+                      x2="54.8964"
+                      y2="18.8322"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
 
-      <div class="arrow arrow-prev ">
-        <img src="assets/images/arrow-testimonials.svg" alt="" />
-      </div>
-      <div class="arrow arrow-next">
-        <img src="assets/images/arrow-testimonials.svg" alt="" />
-      </div>
-
-
-      <div class="quotation-marks">
-        <img src="assets/images/quotation-marks.svg" alt="" />
-      </div>
-      <div class="quotation-marks">
-        <img src="assets/images/quotation-marks.svg" alt="" />
-      </div>
-
-
-      <div class="container-testimonials swiper" data-aos="fade-up">
-
-        <ul class="container-list-testimonials swiper-wrapper">
-
-          <li class="container-testimonial swiper-slide">
-            <p>
-              O NullBank mudou minha forma de gerenciar minhas finanças.
-              Acesso fácil, segurança e vantagens exclusivas.
-            </p>
-
-            <div class="divider"></div>
-            <div class="testimonial-person">
-              <p><strong>Maria Eduarda</strong> - Creative Director</p>
+              <div class="icon">
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                    fill="url(#paint0_linear_840_1388)"
+                  />
+                  <path
+                    d="M24.009 12.0001L24.0078 24.0089L32.4872 32.4883"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_840_1388"
+                      x1="3.03936"
+                      y1="0.469676"
+                      x2="56.2347"
+                      y2="24.1511"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
             </div>
+
+            <svg
+              viewBox="0 0 295 603"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="8"
+                y="5"
+                width="279"
+                height="593"
+                rx="39"
+                fill="url(#paint0_linear_837_1032)"
+                stroke="#DBE4FF"
+                stroke-width="10"
+              />
+              <rect
+                x="108.5"
+                y="17.5"
+                width="77"
+                height="23"
+                rx="10.5"
+                fill="#DBE4FF"
+                stroke="#DBE4FF"
+              />
+              <circle cx="174" cy="29" r="4" fill="#4C6EF5" />
+              <path
+                d="M0 107C0 106.448 0.447715 106 1 106H3V127H1C0.447715 127 0 126.552 0 126V107Z"
+                fill="#4C6EF5"
+              />
+              <path
+                d="M0 147C0 146.448 0.447715 146 1 146H3V188H1C0.447715 188 0 187.552 0 187V147Z"
+                fill="#4C6EF5"
+              />
+              <path
+                d="M0 199C0 198.448 0.447715 198 1 198H3V240H1C0.447715 240 0 239.552 0 239V199Z"
+                fill="#4C6EF5"
+              />
+              <path
+                d="M295 240C295 240.552 294.552 241 294 241H292V175H294C294.552 175 295 175.448 295 176V240Z"
+                fill="#4C6EF5"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_837_1032"
+                  x1="92.902"
+                  y1="-81.1594"
+                  x2="570.056"
+                  y2="481.949"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4C6EF5" />
+                  <stop offset="1" stop-color="#1E325F" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+        <div class="content">
+          <span class="text-hat" data-aos="fade-up" data-aos-delay="60"
+            >App</span
+          >
+          <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">
+            Faça tudo pelo app
+          </h2>
+          <p class="text-body" data-aos="fade-up" data-aos-delay="100">
+            Tudo o que você precisa, apenas um aplicativo. Crie uma conta, ative
+            seu cartão e economize em tudo, desde mercearias até carros
+            alugados.
+          </p>
+
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <div class="icon">
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9.25576L24.0086 4.00012L42 9.25576V20.0338C42 31.3623 34.7502 41.4195 24.0026 45.0006C13.2521 41.4196 6 31.3601 6 20.0288V9.25576Z"
+                    fill="url(#paint0_linear_837_1371)"
+                  />
+                  <path
+                    d="M15 23L22 30L34 18"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_837_1371"
+                      x1="5.13542"
+                      y1="0.381496"
+                      x2="54.8964"
+                      y2="19.8323"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et
+              </p>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <div class="icon">
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                    fill="url(#paint0_linear_840_1388)"
+                  />
+                  <path
+                    d="M24.009 12.0001L24.0078 24.0089L32.4872 32.4883"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_840_1388"
+                      x1="3.03936"
+                      y1="0.469676"
+                      x2="56.2347"
+                      y2="24.1511"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et
+              </p>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <div class="icon">
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 8.25564L24.0086 3L42 8.25564V19.0337C42 30.3622 34.7502 40.4194 24.0026 44.0005C13.2521 40.4195 6 30.36 6 19.0287V8.25564Z"
+                    fill="url(#paint0_linear_840_1392)"
+                  />
+                  <path
+                    d="M17 19H31"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 25H31"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31 19L26 14"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 30L17 25"
+                    stroke="#F8F9FA"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_840_1392"
+                      x1="5.13542"
+                      y1="-0.618626"
+                      x2="54.8964"
+                      y2="18.8322"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3777F4" />
+                      <stop offset="1" stop-color="#1B2A4C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-benefits">
+      <div class="container">
+        <div class="content">
+          <span class="text-hat" data-aos="fade-up" data-aos-delay="60"
+            >vantagens</span
+          >
+          <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">
+            Quais as vantagens de usar NullBank?
+          </h2>
+
+          <div class="container-cards">
+            <div
+              class="card"
+              data-grid="p"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <img src="assets/images/pix.svg" alt="Pix" />
+              <strong>Pix</strong>
+              <p class="text-body">
+                Transações rápidas e seguras com o Pix através do NullBank
+              </p>
+            </div>
+            <div
+              class="card"
+              data-grid="s"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              <img src="assets/images/seguranca.svg" alt="Segurança" />
+              <strong>Segurança</strong>
+              <p class="text-body">
+                Proteção avançada de informações financeiras
+              </p>
+            </div>
+            <div
+              class="card"
+              data-grid="t"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <img src="assets/images/transacao.svg" alt="Transação" />
+              <strong>Transação</strong>
+              <p class="text-body">
+                Realize Transações Rápidas e Convenientes com o NullBank.
+              </p>
+            </div>
+            <div
+              class="card"
+              data-grid="c"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <img src="assets/images/card-icon.svg" alt="cartão" />
+              <strong>Cartão</strong>
+              <p class="text-body">
+                Compre com Liberdade e Aproveite Vantagens Exclusivas.
+              </p>
+            </div>
+
+            <div
+              class="card"
+              data-grid="v"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <img src="assets/images/tempo.svg" alt="Velocidade" />
+              <strong>Velocidade</strong>
+              <p class="text-body">
+                Interface clara e intuitiva para gerenciar suas finanças.
+              </p>
+            </div>
+
+            <div
+              class="card"
+              data-grid="v-2"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="assets/images/user.svg" alt="Velocidade" />
+              <strong>Disponibilidade</strong>
+              <p class="text-body">
+                serviços bancários em horários e locais convenientes para os
+                clientes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text">
+          <h4 class="text-display">Null</h4>
+          <h4 class="text-display">Null</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-testimonials">
+      <div class="container">
+        <div class="arrow arrow-prev">
+          <img src="assets/images/arrow-testimonials.svg" alt="" />
+        </div>
+        <div class="arrow arrow-next">
+          <img src="assets/images/arrow-testimonials.svg" alt="" />
+        </div>
+
+        <div class="quotation-marks">
+          <img src="assets/images/quotation-marks.svg" alt="" />
+        </div>
+        <div class="quotation-marks">
+          <img src="assets/images/quotation-marks.svg" alt="" />
+        </div>
+
+        <div class="container-testimonials swiper" data-aos="fade-up">
+          <ul class="container-list-testimonials swiper-wrapper">
+            <li class="container-testimonial swiper-slide">
+              <p>
+                O NullBank mudou minha forma de gerenciar minhas finanças.
+                Acesso fácil, segurança e vantagens exclusivas.
+              </p>
+
+              <div class="divider"></div>
+              <div class="testimonial-person">
+                <p><strong>Maria Eduarda</strong> - Creative Director</p>
+              </div>
+            </li>
+
+            <li class="container-testimonial swiper-slide">
+              <p>
+                Escolhi o Nullbank por oferecer taxas de juros competitivas,
+                rapidez e segurança em transações e facilidade de acesso aos
+                seus dados financeiros.
+              </p>
+
+              <div class="divider"></div>
+              <div class="testimonial-person">
+                <p><strong>Maria Santos</strong> - Estudante universitária</p>
+              </div>
+            </li>
+
+            <li class="container-testimonial swiper-slide">
+              <p>
+                O NullBank mudou minha forma de gerenciar minhas finanças.
+                Acesso fácil, segurança e vantagens exclusivas.
+              </p>
+
+              <div class="divider"></div>
+              <div class="testimonial-person">
+                <p><strong>Rafael Oliveira</strong> - Designer gráfico</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-download">
+      <div class="container">
+        <div class="content">
+          <span class="text-hat" data-aos="fade-up" data-aos-delay="60"
+            >Download</span
+          >
+          <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">
+            Baixe o NullBank agora
+          </h2>
+          <p class="text-body" data-aos="fade-up" data-aos-delay="100">
+            Baixe agora o aplicativo NullBank e tenha acesso a uma nova forma de
+            gerenciar suas finanças de maneira rápida, segura e conveniente.
+            Realize transações, acesse suas contas e tire proveito de vantagens
+            exclusivas.
+          </p>
+
+          <div
+            class="container-icons-stores"
+            data-aos="fade-up"
+            data-aos-delay="120"
+          >
+            <div class="store">
+              <img src="assets/images/apple.svg" alt="" />
+              <p>
+                Download via <br />
+                <strong>Apple Store</strong>
+              </p>
+            </div>
+            <div class="store">
+              <img src="assets/images/google.svg" alt="" />
+              <p>
+                Download via <br />
+                <strong>Apple Store</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/phone-download.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="s-faq" id="questions">
+      <div class="container">
+        <div class="content">
+          <span class="text-hat" data-aos="fade-up" data-aos-delay="60"
+            >Duvidas</span
+          >
+          <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">
+            Perguntas frequentes
+          </h2>
+        </div>
+
+        <ul class="list-questions">
+          <li class="question" data-aos="fade-up" data-aos-delay="60">
+            <div class="question-header">
+              <strong class="question-title"> O que é o NullBank? </strong>
+              <div class="container-button">
+                <span></span>
+              </div>
+            </div>
+            <p class="text-body">
+              O NullBank é um banco digital que oferece aos seus clientes uma
+              forma conveniente e segura de gerenciar suas finanças.
+            </p>
           </li>
 
-          <li class="container-testimonial swiper-slide">
-            <p>
-              Escolhi o Nullbank por oferecer taxas de juros competitivas, rapidez e segurança em transações e
-              facilidade de acesso aos seus dados financeiros.
-            </p>
-
-            <div class="divider"></div>
-            <div class="testimonial-person">
-              <p><strong>Maria Santos</strong> - Estudante universitária</p>
+          <li class="question" data-aos="fade-up" data-aos-delay="60">
+            <div class="question-header">
+              <strong class="question-title">
+                Posso acessar minhas contas a qualquer momento?
+              </strong>
+              <div class="container-button">
+                <span></span>
+              </div>
             </div>
+            <p class="text-body">
+              Sim, você pode acessar suas contas a qualquer momento através do
+              aplicativo NullBank.
+            </p>
           </li>
 
-          <li class="container-testimonial swiper-slide">
-            <p>
-              O NullBank mudou minha forma de gerenciar minhas finanças.
-              Acesso fácil, segurança e vantagens exclusivas.
-            </p>
-
-            <div class="divider"></div>
-            <div class="testimonial-person">
-              <p><strong>Rafael Oliveira</strong> - Designer gráfico</p>
+          <li class="question" data-aos="fade-up" data-aos-delay="60">
+            <div class="question-header">
+              <strong class="question-title">
+                É seguro usar o NullBank?
+              </strong>
+              <div class="container-button">
+                <span></span>
+              </div>
             </div>
+            <p class="text-body">
+              Sim, o NullBank tem medidas de segurança avançadas para proteger
+              as informações financeiras dos seus clientes.
+            </p>
           </li>
 
+          <li class="question" data-aos="fade-up" data-aos-delay="60">
+            <div class="question-header">
+              <strong class="question-title">
+                Posso usar o NullBank para fazer transações com o Pix?
+              </strong>
+              <div class="container-button">
+                <span></span>
+              </div>
+            </div>
+            <p class="text-body">
+              Sim, você pode usar o NullBank para fazer transações rápidas e
+              seguras com o Pix.
+            </p>
+          </li>
+
+          <li class="question" data-aos="fade-up" data-aos-delay="60">
+            <div class="question-header">
+              <strong class="question-title">
+                O NullBank tem taxas escondidas?
+              </strong>
+              <div class="container-button">
+                <span></span>
+              </div>
+            </div>
+            <p class="text-body">
+              Não, o NullBank não tem taxas escondidas e oferece transparência
+              financeira aos seus clientes.
+            </p>
+          </li>
+
+          <li class="question" data-aos="fade-up" data-aos-delay="60">
+            <div class="question-header">
+              <strong class="question-title">
+                O NullBank possui aplicativo mobile?
+              </strong>
+              <div class="container-button">
+                <span></span>
+              </div>
+            </div>
+            <p class="text-body">
+              Sim, o NullBank possui um aplicativo mobile para Android e iOS,
+              que pode ser baixado gratuitamente na Google Play Store e na App
+              Store.
+            </p>
+          </li>
         </ul>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="s-download">
-    <div class="container">
-      <div class="content">
-        <span class="text-hat" data-aos="fade-up" data-aos-delay="60">Download</span>
-        <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">Baixe o NullBank agora</h2>
-        <p class="text-body" data-aos="fade-up" data-aos-delay="100">
-          Baixe agora o aplicativo NullBank e tenha acesso a uma nova forma de
-          gerenciar suas finanças de maneira rápida, segura e conveniente.
-          Realize transações, acesse suas contas e tire proveito de vantagens
-          exclusivas.
-        </p>
+    <footer class="footer">
+      <div class="container">
+        <div class="col">
+          <strong class="logo white">NullBank</strong>
+        </div>
 
-        <div class="container-icons-stores" data-aos="fade-up" data-aos-delay="120">
+        <div class="col">
+          <h3>NullBank</h3>
+          <nav>
+            <ul>
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Comunidade</a></li>
+              <li><a href="">Investidores</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <h3>Para voce</h3>
+          <nav>
+            <ul>
+              <li><a href="">Cartões</a></li>
+              <li><a href="">Seguros</a></li>
+              <li><a href="">Pix</a></li>
+              <li><a href="">Empréstimos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <h3>Redes social</h3>
+          <nav>
+            <ul>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Linkedin</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col container-icons-stores">
+          <h3>Baixe o app</h3>
           <div class="store">
-            <img src="assets/images/apple.svg" alt="" />
+            <svg
+              width="18"
+              height="21"
+              viewBox="0 0 18 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.789384 11.3561C0.619656 8.39761 2.71685 5.37793 5.80079 5.37793C6.51095 5.37793 6.833 5.54397 7.60648 5.786C8.02061 5.91558 8.72238 6.27567 9.12816 6.27567C9.53394 6.27567 10.0209 6.01043 10.6777 5.76818C11.6095 5.42451 12.1606 5.38775 12.699 5.37793C14.5048 5.37793 15.8304 6.13707 16.6757 7.31624C15.2805 8.22924 14.5453 9.33616 14.5047 11.1316C14.5047 12.7639 15.5395 14.3554 17.2032 15.0695C16.7974 16.7834 14.6062 20.3131 12.8005 20.3131C12.1804 20.2775 11.7994 20.1801 11.0759 19.9051C10.5368 19.6674 9.81799 19.497 9.35134 19.497C8.86441 19.4766 8.31866 19.6353 7.63692 19.9051C7.05869 20.1339 6.71417 20.2637 5.9225 20.3131C4.42112 20.4068 1.09021 16.5997 0.789384 11.3561Z"
+                fill="#F8F9FA"
+              />
+              <path
+                d="M10.102 2.19502C9.26452 3.10203 8.94556 4.29656 9.00643 5.37793C10.3861 5.27591 11.3397 4.70462 12.2121 3.64365C13.0845 2.58268 13.0909 1.81173 13.0845 0.685181C12.0691 0.851347 10.8933 1.33808 10.102 2.19502Z"
+                fill="#F8F9FA"
+              />
+            </svg>
+
             <p>
               Download via <br />
               <strong>Apple Store</strong>
             </p>
           </div>
           <div class="store">
-            <img src="assets/images/google.svg" alt="" />
+            <svg
+              width="18"
+              height="20"
+              viewBox="0 0 18 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.896282 0.896722C0.642934 1.15533 0.480865 1.51089 0.480865 1.92287V18.6717C0.480865 19.1448 0.694597 19.5435 1.01485 19.8064L10.5315 10.4101L0.896282 0.896722ZM11.5658 11.4313L3.31401 19.5788L13.6654 13.5044L11.5658 11.4313ZM14.9629 12.743L12.6001 10.4101L15.1062 7.93565L16.968 9.02816C17.937 9.59679 17.937 10.9978 16.968 11.5664L14.9629 12.743ZM11.5658 9.38887L2.75065 0.685181L13.8087 7.17427L11.5658 9.38887Z"
+                fill="#F8F9FA"
+              />
+            </svg>
+
             <p>
               Download via <br />
               <strong>Apple Store</strong>
@@ -587,187 +1156,10 @@
           </div>
         </div>
       </div>
+    </footer>
 
-      <div class="phone" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/images/phone-download.svg" alt="">
-      </div>
-    </div>
-  </section>
-
-  <section class="s-faq">
-    <div class="container">
-      <div class="content">
-        <span class="text-hat" data-aos="fade-up" data-aos-delay="60">Duvidas</span>
-        <h2 class="text-title" data-aos="fade-up" data-aos-delay="80">Perguntas frequentes</h2>
-      </div>
-
-      <ul class="list-questions">
-        <li class="question" data-aos="fade-up" data-aos-delay="60">
-          <div class="question-header">
-            <strong class="question-title"> O que é o NullBank? </strong>
-            <div class="container-button">
-              <span></span>
-            </div>
-          </div>
-          <p class="text-body">
-            O NullBank é um banco digital que oferece aos seus clientes uma forma conveniente e segura de gerenciar suas
-            finanças.
-          </p>
-        </li>
-
-        <li class="question" data-aos="fade-up" data-aos-delay="60">
-          <div class="question-header">
-            <strong class="question-title">
-              Posso acessar minhas contas a qualquer momento?
-            </strong>
-            <div class="container-button">
-              <span></span>
-            </div>
-          </div>
-          <p class="text-body">
-            Sim, você pode acessar suas contas a qualquer momento através do aplicativo NullBank.
-          </p>
-        </li>
-
-        <li class="question" data-aos="fade-up" data-aos-delay="60">
-          <div class="question-header">
-            <strong class="question-title">
-              É seguro usar o NullBank?
-            </strong>
-            <div class="container-button">
-              <span></span>
-            </div>
-          </div>
-          <p class="text-body">
-            Sim, o NullBank tem medidas de segurança avançadas para proteger as informações financeiras dos seus
-            clientes.
-          </p>
-        </li>
-
-        <li class="question" data-aos="fade-up" data-aos-delay="60">
-          <div class="question-header">
-            <strong class="question-title">
-              Posso usar o NullBank para fazer transações com o Pix?
-            </strong>
-            <div class="container-button">
-              <span></span>
-            </div>
-          </div>
-          <p class="text-body">
-            Sim, você pode usar o NullBank para fazer transações rápidas e seguras com o Pix.
-          </p>
-        </li>
-
-        <li class="question" data-aos="fade-up" data-aos-delay="60">
-          <div class="question-header">
-            <strong class="question-title">
-              O NullBank tem taxas escondidas?
-            </strong>
-            <div class="container-button">
-              <span></span>
-            </div>
-          </div>
-          <p class="text-body">
-            Não, o NullBank não tem taxas escondidas e oferece transparência financeira aos seus clientes.
-          </p>
-        </li>
-
-
-        <li class="question" data-aos="fade-up" data-aos-delay="60">
-          <div class="question-header">
-            <strong class="question-title">
-              O NullBank possui aplicativo mobile?
-            </strong>
-            <div class="container-button">
-              <span></span>
-            </div>
-          </div>
-          <p class="text-body">
-            Sim, o NullBank possui um aplicativo mobile para Android e iOS, que pode ser baixado gratuitamente na Google
-            Play Store e na App Store.
-          </p>
-        </li>
-
-      </ul>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="col">
-        <strong class="logo white">NullBank</strong>
-      </div>
-
-      <div class="col">
-        <h3>NullBank</h3>
-        <nav>
-          <ul>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Comunidade</a></li>
-            <li><a href="">Investidores</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col">
-        <h3>Para voce</h3>
-        <nav>
-          <ul>
-            <li><a href="">Cartões</a></li>
-            <li><a href="">Seguros</a></li>
-            <li><a href="">Pix</a></li>
-            <li><a href="">Empréstimos</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col">
-        <h3>Redes social</h3>
-        <nav>
-          <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Linkedin</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="col container-icons-stores">
-        <h3>Baixe o app</h3>
-        <div class="store">
-          <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0.789384 11.3561C0.619656 8.39761 2.71685 5.37793 5.80079 5.37793C6.51095 5.37793 6.833 5.54397 7.60648 5.786C8.02061 5.91558 8.72238 6.27567 9.12816 6.27567C9.53394 6.27567 10.0209 6.01043 10.6777 5.76818C11.6095 5.42451 12.1606 5.38775 12.699 5.37793C14.5048 5.37793 15.8304 6.13707 16.6757 7.31624C15.2805 8.22924 14.5453 9.33616 14.5047 11.1316C14.5047 12.7639 15.5395 14.3554 17.2032 15.0695C16.7974 16.7834 14.6062 20.3131 12.8005 20.3131C12.1804 20.2775 11.7994 20.1801 11.0759 19.9051C10.5368 19.6674 9.81799 19.497 9.35134 19.497C8.86441 19.4766 8.31866 19.6353 7.63692 19.9051C7.05869 20.1339 6.71417 20.2637 5.9225 20.3131C4.42112 20.4068 1.09021 16.5997 0.789384 11.3561Z"
-              fill="#F8F9FA" />
-            <path
-              d="M10.102 2.19502C9.26452 3.10203 8.94556 4.29656 9.00643 5.37793C10.3861 5.27591 11.3397 4.70462 12.2121 3.64365C13.0845 2.58268 13.0909 1.81173 13.0845 0.685181C12.0691 0.851347 10.8933 1.33808 10.102 2.19502Z"
-              fill="#F8F9FA" />
-          </svg>
-
-          <p>
-            Download via <br />
-            <strong>Apple Store</strong>
-          </p>
-        </div>
-        <div class="store">
-          <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M0.896282 0.896722C0.642934 1.15533 0.480865 1.51089 0.480865 1.92287V18.6717C0.480865 19.1448 0.694597 19.5435 1.01485 19.8064L10.5315 10.4101L0.896282 0.896722ZM11.5658 11.4313L3.31401 19.5788L13.6654 13.5044L11.5658 11.4313ZM14.9629 12.743L12.6001 10.4101L15.1062 7.93565L16.968 9.02816C17.937 9.59679 17.937 10.9978 16.968 11.5664L14.9629 12.743ZM11.5658 9.38887L2.75065 0.685181L13.8087 7.17427L11.5658 9.38887Z"
-              fill="#F8F9FA" />
-          </svg>
-
-          <p>
-            Download via <br />
-            <strong>Apple Store</strong>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
